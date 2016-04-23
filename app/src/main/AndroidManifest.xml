@@ -38,8 +38,14 @@
                 android:value="com.example.android.sunshine.app.MainActivity"/>
         </activity>
         <provider
-            android:authorities="com.example.android.sunshine.app"
-            android:name=".data.WeatherProvider"/>
+            android:authorities="com.example.android.sunshine.app.AUTHORITIES"
+            android:name=".data.WeatherProvider"
+            android:enabled="true"
+            android:exported="true"/>
     </application>
+    <permission
+        android:name="com.example.android.sunshine.app.LICENSE_TO_KILL"
+        android:protectionLevel="dangerous"
+        android:label="License to kill"/>
 
 </manifest>
