@@ -18,19 +18,17 @@
         based on your message history
     </string>
 
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_location_label">Location</string>
+    <string name="pref_location_default">Bandung</string>
 
-    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string name="pref_units">Units</string>
     <string-array name="pref_example_list_titles">
-        <item>Always</item>
-        <item>When possible</item>
-        <item>Never</item>
+        <item>Metric (m / kg)</item>
+        <item>Imperial (ft / lb)</item>
     </string-array>
     <string-array name="pref_example_list_values">
-        <item>1</item>
-        <item>0</item>
-        <item>-1</item>
+        <item>metric</item>
+        <item>imperial</item>
     </string-array>
 
     <!-- Example settings for Data & Sync -->
@@ -65,5 +63,12 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_location_key">location</string>
+    <string name="pref_units_metric">metric</string>
+    <string name="pref_units_imperial">imperial</string>
+    <string name="pref_units_key">unit</string>
+
+    <string name="action_map">Map Location</string>
+    <string name="action_share">Share</string>
 
 </resources>
