@@ -1,5 +1,12 @@
 apply plugin: 'com.android.application'
 
+def getKey() {
+    Properties properties = new Properties();
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    return properties.getProperty('key', null)
+}
+def key = getKey()
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -18,7 +25,7 @@ android {
         }
     }
     buildTypes.each {
-        it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', '\"${key}\"'
+        it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', "\"NGUxMDQ3MzkyYWJjMmZmNjk1OWMxNWUxYTZjMzIyZjg=\""
     }
 }
 
