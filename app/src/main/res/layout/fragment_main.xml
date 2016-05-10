@@ -10,6 +10,7 @@
     tools:context=".ForecastFragment">
 
     <ListView
+        style="@style/ForecastListStyle"
         android:id="@+id/listview_forecast"
         android:text="@string/hello_world"
         android:layout_width="match_parent"
